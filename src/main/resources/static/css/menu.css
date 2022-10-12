@@ -1,0 +1,14 @@
+.navbar {
+	background-color: #b01b15 !important;
+	border: 0;
+	border-radius: 0;
+}
+
+.nav a {
+	color: #fefefe !important;
+}
+
+ .active a {
+	background-color: #8C1A0F !important;
+	box-shadow: inset 5em 1em #8C1A0F !important;
+}

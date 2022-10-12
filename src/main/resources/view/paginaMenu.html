@@ -5,21 +5,22 @@
     <title>Sistema Gestão de Cursos - E-learning Management</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/normalize.css}" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/menu.css}" />
 </head>
 
 <body>
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">Sistema Integrado de Gestão</a>
+            <a class="navbar-brand" href="#">FatecFlix</a>
         </div>
         <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
-            <li><a th:href="@{/grupo3/cliente}">Cliente </a></li>
-            <li><a th:href="@{/grupo3/clinica}"> Clinica-agendamento </a></li>
+            <li><a th:href="@{/grupo3/cliente}">Gestão de Usuários</a></li>
             <li><a th:href="@{/grupo3/curso}">Gestão de Cursos</a></li>
             <li><a th:href="@{/grupo3/matricula}">Gestão de Matrículas</a></li>
             <li><a th:href="@{/login?logout}">Logout</a></li>
@@ -27,9 +28,11 @@
     </div>
 </nav>
 <div class="container">
-    <h3>Centro Paula Souza - Curso de Análise e Desenvolvimento de Sistemas</h3>
-    <p>2021 2o. Semestre.</p>
+    <h3>Centro Paula Souza - Curso de Desenvolimento de Software Multiplataforma</h3>
+    <p>2022 2o. Semestre.</p>
     <p th:inline="text">Usuário - [[${#httpServletRequest.remoteUser}]]</p>
+    <h2>Sistema de Gestão de Cursos - E-learning Management</h2>
+    <h1>fatecflix</h1>
 </div>
 </body>
 
